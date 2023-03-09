@@ -1,2 +1,2 @@
 # catkin_ws
-ros_projects_data
+This repo keeps track of my ros projects
