@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/sree/catkin_ws/src/manipulator_ws/install/setup.sh

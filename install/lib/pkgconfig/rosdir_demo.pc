@@ -1,0 +1,8 @@
+prefix=/home/sree/catkin_ws/install
+
+Name: rosdir_demo
+Description: Description of rosdir_demo
+Version: 0.0.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

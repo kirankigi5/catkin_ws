@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+    <!-- Start Gazebo with an empty world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="" />
+    </include>
+
+    <!-- Spawn a robot in Gazebo -->
+    <node name="spawn_robot" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+        args="-urdf -model my_robot -param robot_description" />
+
+    <!-- Launch RViz for visualization -->
+    <!-- <include file="$(find rviz)/launch/display.launch" /> -->
+
+    <!-- Launch any additional nodes required for your robot -->
+    <!-- <node name="my_node" pkg="my_package" type="my_node" /> -->
+</launch>
+  

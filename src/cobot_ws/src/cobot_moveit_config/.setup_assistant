@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: cobot_description
+    relative_path: urdf/cobot.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/cobot.srdf
+  CONFIG:
+    author_name: Abhayram
+    author_email: abhayram.a@students.iiit.ac.in
+    generated_timestamp: 1667468988

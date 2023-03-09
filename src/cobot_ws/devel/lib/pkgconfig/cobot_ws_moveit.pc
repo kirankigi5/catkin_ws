@@ -1,0 +1,8 @@
+prefix=/home/abhayram/cobot_ws/devel
+
+Name: cobot_ws_moveit
+Description: Description of cobot_ws_moveit
+Version: 0.3.0
+Cflags: 
+Libs: -L${prefix}/lib 
+Requires: 

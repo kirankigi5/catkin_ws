@@ -1,0 +1,2 @@
+manipulator_description:manipulator_pkg
+-DCATKIN_DEVEL_PREFIX=/home/sree/catkin_ws/src/manipulator_ws/devel -DCMAKE_INSTALL_PREFIX=/home/sree/catkin_ws/src/manipulator_ws/install -G Unix Makefiles

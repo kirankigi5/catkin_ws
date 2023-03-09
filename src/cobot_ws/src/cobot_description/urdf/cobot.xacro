@@ -1,0 +1,140 @@
+<?xml version="1.0" ?>
+<robot name="cobot" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find cobot_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find cobot_description)/urdf/cobot.trans" />
+<xacro:include filename="$(find cobot_description)/urdf/cobot.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="-9.04691109394067e-18 0.0 0.025" rpy="0 0 0"/>
+    <mass value="7.891680745817561"/>
+    <inertia ixx="0.014271" iyy="0.014271" izz="0.025253" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_2_1">
+  <inertial>
+    <origin xyz="0.0 0.004999999999999982 0.03395305452627101" rpy="0 0 0"/>
+    <mass value="0.789168074581756"/>
+    <inertia ixx="0.000359" iyy="0.001616" izz="0.001269" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.1" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/link_2_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_3_1">
+  <inertial>
+    <origin xyz="0.2500000000000006 0.004999999999999965 8.326672684688674e-17" rpy="0 0 0"/>
+    <mass value="1.232988380244034"/>
+    <inertia ixx="0.000102" iyy="0.02827" izz="0.028189" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.14" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.14" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/link_3_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_1_1">
+  <inertial>
+    <origin xyz="-3.552713678800501e-17 -5.329070518200751e-17 0.02500000000000001" rpy="0 0 0"/>
+    <mass value="7.89168074581756"/>
+    <inertia ixx="0.014271" iyy="0.014271" izz="0.025253" ixy="0.0" iyz="-0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.0 -0.05" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.0 -0.05" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/link_1_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="link_4_1">
+  <inertial>
+    <origin xyz="0.25 0.004999999999999983 1.3877787807814457e-16" rpy="0 0 0"/>
+    <mass value="1.0197835973916873"/>
+    <inertia ixx="6.1e-05" iyy="0.023007" izz="0.022963" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.5 0.0 -0.14" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.5 0.0 -0.14" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://cobot_description/meshes/link_4_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="Rigid2" type="fixed">
+  <origin xyz="0.0 0.0 0.05" rpy="0 0 0"/>
+  <parent link="link_1_1"/>
+  <child link="link_2_1"/>
+</joint>
+
+<joint name="Rev5" type="revolute">
+  <origin xyz="0.0 0.0 0.04" rpy="0 0 0"/>
+  <parent link="link_2_1"/>
+  <child link="link_3_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+  <limit upper="3.141593" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+<joint name="Rev6" type="continuous">
+  <origin xyz="0.0 0.0 0.05" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="link_1_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+</joint>
+
+<joint name="Rev7" type="continuous">
+  <origin xyz="0.5 0.0 0.0" rpy="0 0 0"/>
+  <parent link="link_3_1"/>
+  <child link="link_4_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+</robot>
