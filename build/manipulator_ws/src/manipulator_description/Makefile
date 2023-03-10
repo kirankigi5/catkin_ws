@@ -312,76 +312,6 @@ actionlib_generate_messages_py/fast:
 .PHONY : actionlib_generate_messages_py/fast
 
 # Convenience name for target.
-manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_cpp: manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/rule
-.PHONY : actionlib_msgs_generate_messages_cpp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_cpp/fast:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build.make manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_cpp.dir/build
-.PHONY : actionlib_msgs_generate_messages_cpp/fast
-
-# Convenience name for target.
-manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-.PHONY : manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_eus: manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/rule
-.PHONY : actionlib_msgs_generate_messages_eus
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_eus/fast:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build.make manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_eus.dir/build
-.PHONY : actionlib_msgs_generate_messages_eus/fast
-
-# Convenience name for target.
-manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_lisp: manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/rule
-.PHONY : actionlib_msgs_generate_messages_lisp
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_lisp/fast:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build.make manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_lisp.dir/build
-.PHONY : actionlib_msgs_generate_messages_lisp/fast
-
-# Convenience name for target.
-manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-.PHONY : manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_nodejs: manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/rule
-.PHONY : actionlib_msgs_generate_messages_nodejs
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_nodejs/fast:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build.make manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_nodejs.dir/build
-.PHONY : actionlib_msgs_generate_messages_nodejs/fast
-
-# Convenience name for target.
-manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-
-# Convenience name for target.
-actionlib_msgs_generate_messages_py: manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_py.dir/rule
-.PHONY : actionlib_msgs_generate_messages_py
-
-# fast build rule for target.
-actionlib_msgs_generate_messages_py/fast:
-	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build.make manipulator_ws/src/manipulator_description/CMakeFiles/actionlib_msgs_generate_messages_py.dir/build
-.PHONY : actionlib_msgs_generate_messages_py/fast
-
-# Convenience name for target.
 manipulator_ws/src/manipulator_description/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule:
 	cd /home/sree/catkin_ws/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 manipulator_ws/src/manipulator_description/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
 .PHONY : manipulator_ws/src/manipulator_description/CMakeFiles/tf2_msgs_generate_messages_cpp.dir/rule
@@ -469,11 +399,6 @@ help:
 	@echo "... actionlib_generate_messages_lisp"
 	@echo "... actionlib_generate_messages_nodejs"
 	@echo "... actionlib_generate_messages_py"
-	@echo "... actionlib_msgs_generate_messages_cpp"
-	@echo "... actionlib_msgs_generate_messages_eus"
-	@echo "... actionlib_msgs_generate_messages_lisp"
-	@echo "... actionlib_msgs_generate_messages_nodejs"
-	@echo "... actionlib_msgs_generate_messages_py"
 	@echo "... controller_manager_msgs_generate_messages_cpp"
 	@echo "... controller_manager_msgs_generate_messages_eus"
 	@echo "... controller_manager_msgs_generate_messages_lisp"

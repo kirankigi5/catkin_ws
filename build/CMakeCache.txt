@@ -411,6 +411,9 @@ UBUNTU:BOOL=TRUE
 UBUNTU_FOCAL:BOOL=TRUE
 
 //Path to a file.
+_file_name:FILEPATH=/home/sree/catkin_ws/src/rosserial/rosserial_test/test/rosserial_python_socket.test
+
+//Path to a file.
 _gmock_INCLUDES:FILEPATH=/usr/src/googletest/googlemock/include/gmock/gmock.h
 
 //Path to a file.
@@ -524,8 +527,7 @@ dynamixel_workbench_controllers_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/dynam
 //Value Computed by CMake
 dynamixel_workbench_msgs_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/dynamixel-workbench-msgs/dynamixel_workbench_msgs
 
-//The directory containing a CMake configuration file for dynamixel_workbench_msgs.
-dynamixel_workbench_msgs_DIR:PATH=/home/sree/catkin_ws/devel/share/dynamixel_workbench_msgs/cmake
+dynamixel_workbench_msgs_DIR:PATH=
 
 //Value Computed by CMake
 dynamixel_workbench_msgs_IS_TOP_LEVEL:STATIC=OFF
@@ -634,7 +636,7 @@ joint_state_controller_DIR:PATH=/opt/ros/noetic/share/joint_state_controller/cma
 kdl_parser_DIR:PATH=/opt/ros/noetic/share/kdl_parser/cmake
 
 //Path to a library.
-lib:FILEPATH=/opt/ros/noetic/lib/libxmlrpcpp.so
+lib:FILEPATH=/usr/lib/liborocos-kdl.so
 
 //Value Computed by CMake
 manipulator_description_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/manipulator_ws/src/manipulator_description
@@ -662,6 +664,9 @@ message_generation_DIR:PATH=/opt/ros/noetic/share/message_generation/cmake
 
 //The directory containing a CMake configuration file for message_runtime.
 message_runtime_DIR:PATH=/opt/ros/noetic/share/message_runtime/cmake
+
+//The directory containing a CMake configuration file for nav_msgs.
+nav_msgs_DIR:PATH=/opt/ros/noetic/share/nav_msgs/cmake
 
 //The directory containing a CMake configuration file for pluginlib.
 pluginlib_DIR:PATH=/opt/ros/noetic/share/pluginlib/cmake
@@ -741,11 +746,23 @@ rosserial_chibios_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial
 //Value Computed by CMake
 rosserial_client_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_client
 
+//The directory containing a CMake configuration file for rosserial_client.
+rosserial_client_DIR:PATH=/home/sree/catkin_ws/devel/share/rosserial_client/cmake
+
 //Value Computed by CMake
 rosserial_client_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 rosserial_client_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_client
+
+//Value Computed by CMake
+rosserial_embeddedlinux_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_embeddedlinux
+
+//Value Computed by CMake
+rosserial_embeddedlinux_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+rosserial_embeddedlinux_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_embeddedlinux
 
 //Value Computed by CMake
 rosserial_mbed_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_mbed
@@ -771,6 +788,9 @@ rosserial_msgs_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_ms
 //Value Computed by CMake
 rosserial_python_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_python
 
+//The directory containing a CMake configuration file for rosserial_python.
+rosserial_python_DIR:PATH=/home/sree/catkin_ws/devel/share/rosserial_python/cmake
+
 //Value Computed by CMake
 rosserial_python_IS_TOP_LEVEL:STATIC=OFF
 
@@ -780,6 +800,9 @@ rosserial_python_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_
 //Value Computed by CMake
 rosserial_server_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_server
 
+//The directory containing a CMake configuration file for rosserial_server.
+rosserial_server_DIR:PATH=/home/sree/catkin_ws/devel/share/rosserial_server/cmake
+
 //Value Computed by CMake
 rosserial_server_IS_TOP_LEVEL:STATIC=OFF
 
@@ -788,6 +811,15 @@ rosserial_server_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_
 
 //Dependencies for the target
 rosserial_server_lookup_LIB_DEPENDS:STATIC=general;/usr/lib/x86_64-linux-gnu/libpython3.8.so;
+
+//Value Computed by CMake
+rosserial_test_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_test
+
+//Value Computed by CMake
+rosserial_test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+rosserial_test_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_test
 
 //Value Computed by CMake
 rosserial_tivac_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_tivac
@@ -817,6 +849,15 @@ rosserial_vex_v5_IS_TOP_LEVEL:STATIC=OFF
 rosserial_vex_v5_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_vex_v5
 
 //Value Computed by CMake
+rosserial_windows_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_windows
+
+//Value Computed by CMake
+rosserial_windows_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+rosserial_windows_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_windows
+
+//Value Computed by CMake
 rosserial_xbee_BINARY_DIR:STATIC=/home/sree/catkin_ws/build/rosserial/rosserial_xbee
 
 //Value Computed by CMake
@@ -824,6 +865,9 @@ rosserial_xbee_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
 rosserial_xbee_SOURCE_DIR:STATIC=/home/sree/catkin_ws/src/rosserial/rosserial_xbee
+
+//The directory containing a CMake configuration file for rostest.
+rostest_DIR:PATH=/opt/ros/noetic/share/rostest/cmake
 
 //The directory containing a CMake configuration file for rostime.
 rostime_DIR:PATH=/opt/ros/noetic/share/rostime/cmake
@@ -1011,7 +1055,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=25
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=27
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP
@@ -1059,7 +1103,7 @@ FIND_PACKAGE_MESSAGE_DETAILS_Boost:INTERNAL=[/usr/lib/x86_64-linux-gnu/cmake/Boo
 //Details about finding PY_em
 FIND_PACKAGE_MESSAGE_DETAILS_PY_em:INTERNAL=[/usr/lib/python3/dist-packages/em.py][v()]
 //Details about finding PythonInterp
-FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.9.5()]
+FIND_PACKAGE_MESSAGE_DETAILS_PythonInterp:INTERNAL=[/usr/bin/python3][v3.8.10()]
 //Details about finding PythonLibs
 FIND_PACKAGE_MESSAGE_DETAILS_PythonLibs:INTERNAL=[/usr/lib/x86_64-linux-gnu/libpython3.8.so][/usr/include/python3.8][v3.8.10()]
 //Details about finding Threads
